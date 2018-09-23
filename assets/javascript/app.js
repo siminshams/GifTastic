@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var animals = ["cat", "bird", "dog", "goose", "dolphin", "squirrel", "rabbit", "chicken", "goldfish", "tigger", "frog"];
+    var animals = ["Cat", "Bird", "Dog", "Goose", "Dolphin", "Squirrel", "Rabbit", "Chicken", "Goldfish", "Tiger", "Frog"];
 
     function renderButton() {
 
@@ -13,7 +13,7 @@ $(document).ready(function () {
             btn.attr("data-name", animals[i]);
             btn.text(animals[i]);
             $("#animal-view").append(btn);
-            console.log(btn);
+            
         }
     }
 
@@ -23,7 +23,6 @@ $(document).ready(function () {
         var animal = $("#animal-input").val().trim();
         animals.push(animal);
         renderButton();
-
     });
 
     renderButton();
